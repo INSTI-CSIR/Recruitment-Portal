@@ -7,7 +7,7 @@
 <meta name="email" content="vinitshahdeo@gmail.com">
 <meta name="copyright" content="Vinit Shahdeo 2019"/>
 
-<title>VinnovateIT - Recruitments</title>
+<title>OpEx Price - Recruitments</title>
 <link  rel="stylesheet" href="css/bootstrap.min.css"/>
  <link  rel="stylesheet" href="css/bootstrap-theme.min.css"/>    
  <link rel="stylesheet" href="css/main.css">
@@ -32,7 +32,7 @@ include_once 'dbConnection.php';
 <div class="header">
 <div class="row">
 <div class="col-lg-6">
-<span class="logo">VinnovateIT Recruitments</span></div>
+<span class="logo"><img src="image\opex.png" width="39%" alt="" ></span></div>
 <div class="col-md-4 col-md-offset-2">
  <?php
  include_once 'dbConnection.php';
@@ -64,7 +64,7 @@ echo '<span class="pull-right top title1" ><span class="log1"><span class="glyph
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><b>VinnovateIT</b></a>
+      <a class="navbar-brand" href="#"><b>OpEx Price</b></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -72,7 +72,7 @@ echo '<span class="pull-right top title1" ><span class="log1"><span class="glyph
       <ul class="nav navbar-nav">
         <li <?php if(@$_GET['q']==1) echo'class="active"'; ?> ><a href="account.php?q=1"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;Home<span class="sr-only">(current)</span></a></li>
         <li <?php if(@$_GET['q']==2) echo'class="active"'; ?>><a href="account.php?q=2"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>&nbsp;History</a></li>
-		<li <?php if(@$_GET['q']==3) echo'class="active"'; ?>><a href="account.php?q=3"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>&nbsp;Ranking</a></li></ul>
+		<!-- <li <?php if(@$_GET['q']==3) echo'class="active"'; ?>><a href="account.php?q=3"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>&nbsp;Ranking</a></li></ul> -->
             <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Enter tag ">
@@ -183,13 +183,13 @@ echo '<tr style="color:#66CCFF"><td>Total Questions</td><td>'.$qa.'</td></tr>
 	  <tr style="color:red"><td>Wrong Answer&nbsp;<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></td><td>'.$w.'</td></tr>
 	  <tr style="color:#66CCFF"><td>Score&nbsp;<span class="glyphicon glyphicon-star" aria-hidden="true"></span></td><td>'.$s.'</td></tr>';
 }
-$q=mysqli_query($con,"SELECT * FROM rank WHERE  email='$email' " )or die('Error157');
-while($row=mysqli_fetch_array($q) )
-{
-$s=$row['score'];
-echo '<tr style="color:#990000"><td>Overall Score&nbsp;<span class="glyphicon glyphicon-stats" aria-hidden="true"></span></td><td>'.$s.'</td></tr>';
-}
-echo '</table></div>';
+// $q=mysqli_query($con,"SELECT * FROM rank WHERE  email='$email' " )or die('Error157');
+// while($row=mysqli_fetch_array($q) )
+// {
+// $s=$row['score'];
+// echo '<tr style="color:#990000"><td>Overall Score&nbsp;<span class="glyphicon glyphicon-stats" aria-hidden="true"></span></td><td>'.$s.'</td></tr>';
+// }
+// echo '</table></div>';
 
 }
 ?>
@@ -250,7 +250,7 @@ echo '</table></div>';}
 
 </div></div></div></div>
 <!--Footer start-->
-<div class="row footer">
+<!-- <div class="row footer">
 <div class="col-md-3 box">
 <a href="https://github.com/vinitshahdeo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>&nbsp;GitHub</a>
 </div>
@@ -261,7 +261,7 @@ echo '</table></div>';}
 &nbsp;Developer</a>
 </div>
 <div class="col-md-3 box">
-<a href="feedback.php" target="_blank"><i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Feedback</a></div></div>
+<a href="feedback.php" target="_blank"><i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Feedback</a></div></div> -->
 <div class="modal fade title1" id="developers">
   <div class="modal-dialog">
     <div class="modal-content">

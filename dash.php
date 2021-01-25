@@ -8,7 +8,7 @@
 <meta name="copyright" content="Vinit Shahdeo 2019"/>
 
 
-<title>VinnoavteIT || DASHBOARD </title>
+<title>OpEx Price || DASHBOARD </title>
 <link  rel="stylesheet" href="css/bootstrap.min.css"/>
  <link  rel="stylesheet" href="css/bootstrap-theme.min.css"/>    
  <link rel="stylesheet" href="css/main.css">
@@ -41,7 +41,7 @@ $(function () {
 <div class="header">
 <div class="row">
 <div class="col-lg-6">
-<span class="logo">VinnovateIT</span></div>
+<span class="logo"><img src="image\opex.png" width="39%" alt="" ></span></div>
 <?php
  include_once 'dbConnection.php';
 session_start();
@@ -62,25 +62,23 @@ echo '<span class="pull-right top title1" ><span class="log1"><span class="glyph
 <!-- admin start-->
 
 <!--navigation menu-->
-<nav class="navbar navbar-default title1">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="dash.php?q=0"><b>Dashboard</b></a>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
+<nav class="navbar   navbar-default title1" style="width: 100%;float: left;">
+  <!-- Brand and toggle get grouped for better mobile display -->
+ 
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="dash.php?q=0"><b>Dashboard</b></a>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 col">
+      <ul class="nav navbar-nav  mr-2 " style="float: right;">
         <li <?php if(@$_GET['q']==0) echo'class="active"'; ?>><a href="dash.php?q=0">Home<span class="sr-only">(current)</span></a></li>
         <li <?php if(@$_GET['q']==1) echo'class="active"'; ?>><a href="dash.php?q=1">User</a></li>
-		<li <?php if(@$_GET['q']==2) echo'class="active"'; ?>><a href="dash.php?q=2">Ranking</a></li>
-		<li <?php if(@$_GET['q']==3) echo'class="active"'; ?>><a href="dash.php?q=3">Feedback</a></li>
+    <li <?php if(@$_GET['q']==2) echo'class="active"'; ?>><a href="dash.php?q=2">Ranking</a></li>
+    <li <?php if(@$_GET['q']==3) echo'class="active"'; ?>><a href="dash.php?q=3">Feedback</a></li>
         <li class="dropdown <?php if(@$_GET['q']==4 || @$_GET['q']==5) echo'active"'; ?>">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Quiz<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -89,8 +87,7 @@ echo '<span class="pull-right top title1" ><span class="log1"><span class="glyph
           </ul>
         </li>
       </ul>
-          </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+  </div><!-- /.navbar-collapse -->
 </nav>
 <!--navigation menu closed-->
 <div class="container"><!--container start-->
@@ -417,7 +414,7 @@ echo '</table></div>';
 </div><!--container closed-->
 </div></div>
 <!--Footer start-->
-<div class="row footer">
+<!-- <div class="row footer nav fixed-bottom">
 <div class="col-md-3 box">
 <a href="https://github.com/vinitshahdeo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>&nbsp;GitHub</a>
 </div>
@@ -427,7 +424,7 @@ echo '</table></div>';
 <a href="#" data-toggle="modal" data-target="#developers"><i class="fa fa-code" aria-hidden="true"></i>&nbsp;Developer</a>
 </div>
 <div class="col-md-3 box">
-<a href="feedback.php" target="_blank"><i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Feedback</a></div></div>
+<a href="feedback.php" target="_blank"><i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Feedback</a></div></div> -->
 <!-- Modal For Developers-->
 <div class="modal fade title1" id="developers">
   <div class="modal-dialog">

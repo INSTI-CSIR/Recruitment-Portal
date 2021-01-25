@@ -5,7 +5,7 @@
 <meta name="author" content="Vinit Shahdeo">
 <meta name="email" content="vinitshahdeo@gmail.com">
 <meta name="copyright" content="Vinit Shahdeo 2019"/>
-<title>VinnovateIT - FEEDBACK </title>
+<title>OpEx Price - FEEDBACK </title>
 <link  rel="stylesheet" href="css/bootstrap.min.css"/>
  <link  rel="stylesheet" href="css/bootstrap-theme.min.css"/>    
  <link rel="stylesheet" href="css/main.css">
@@ -28,7 +28,7 @@
 <!--header start-->
 <div class="row header">
 <div class="col-lg-6">
-<span class="logo">VinnovateIT</span></div>
+<span class="logo">OpEx Price</span></div>
 <div class="col-md-2">
 </div>
 <div class="col-md-4">
