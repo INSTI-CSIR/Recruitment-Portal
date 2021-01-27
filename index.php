@@ -3,10 +3,10 @@
 <head>
 
 <meta charset="UTF-8">
-<title>VinnovateIT - Recruitments </title>
+<title>OpEx Price - Recruitments </title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content=" VinnovateIT is official Innovation Lab of VIT University. ">
+<meta name="description" content=" OpEx Price is official Innovation Lab of VIT University. ">
 <meta name="author" content="Vinit Shahdeo">
 <meta name="email" content="vinitshahdeo@gmail.com">
 <meta name="copyright" content="Vinit Shahdeo 2019"/>
@@ -35,17 +35,20 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 <body>
 <div class="header">
 <div class="row">
-<div class="col-lg-6">
-<span class="logo">VinnnovateIT Recruitment</span></div>
-<div class="col-md-2 col-md-offset-4">
-<a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;<span class="title1"><b>Sign in</b></span></a></div>
+  <div class="col-lg-6">
+    <img src="image\opex.png" width="39%" alt="" >
+  </div>
+  <div class="col-md-3 " style="left: 10%;">
+<a href="#" data-toggle="modal" class="btn sub1 float-right" data-target="#login"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;Admin Login</a></div>
+<div class="col-md-3  ">
+<a href="#" class="pull-right btn sub1 float-right" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;<span class="title1">Sign in</span></a></div>
 <!--sign in modal start-->
 <div class="modal fade" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content title1">
+  <div class="modal-dialog" style="margin-top: 15%;">
+    <div class="modal-content title1" style="background-color: #ffffffc7;">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title title1"><span style="color:orange">Log In</span></h4>
+        <h4 class="modal-title title1"><span style="color:#2475ff">Log In</span></h4>
       </div>
       <div class="modal-body">
         <form class="form-horizontal" action="login.php?q=index.php" method="POST">
@@ -73,8 +76,8 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Log in</button>
+        <button type="button" class="btn  btn-danger" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn  btn-success">Log in</button>
 		</fieldset>
 </form>
       </div>
@@ -89,7 +92,13 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 <div class="bg1">
 <div class="row">
 
-<div class="col-md-7"></div>
+<div class="col-md-7">
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">OpEx Careers</h1>
+    <p class="lead"><b style="font-size: 25px;">Welcome</b> is a section on OpEx is to take canidates through tests to ensure best fit .</p>
+  </div>
+</div></div>
 <div class="col-md-4 panel">
 <!-- sign in form begins -->
   <form class="form-horizontal" name="form" action="sign.php?q=account.php" onSubmit="return validateForm()" method="POST">
@@ -104,7 +113,6 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 
   </div>
 </div>
-
 <!-- Text input-->
 <div class="form-group">
   <label class="col-md-12 control-label" for="gender"></label>
@@ -167,7 +175,7 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 <div class="form-group">
   <label class="col-md-12 control-label" for=""></label>
   <div class="col-md-12">
-    <input  type="submit" class="sub" value="sign up" class="btn btn-primary"/>
+    <input  type="submit" class="sub btn btn-dark" value="sign up" class="btn btn-primary"/>
   </div>
 </div>
 
@@ -178,9 +186,9 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 </div><!--container end-->
 
 <!--Footer start-->
-<div class="row footer">
+<!-- <div class="row footer fixed-bottom">
 <div class="col-md-3 box">
-<a href="https://vinnovateit.com/" target="_blank"><i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;About</a>
+<a href="https://OpEx Price.com/" target="_blank"><i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;About</a>
 </div>
 <div class="col-md-3 box">
 <a href="#" data-toggle="modal" data-target="#login"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;Admin Login</a></div>
@@ -189,7 +197,7 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 &nbsp;Developer</a>
 </div>
 <div class="col-md-3 box">
-<a href="https://github.com/vinitshahdeo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></div></div>
+<a href="https://github.com/vinitshahdeo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></div></div> -->
 <!-- Modal For Developers-->
 <div class="modal fade title1" id="developers">
   <div class="modal-dialog">
